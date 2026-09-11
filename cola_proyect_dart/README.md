@@ -19,5 +19,7 @@
 
 Esta aplicación requiere entrada interactiva por teclado (stdin) para funcionar correctamente, ya que solicita datos al usuario durante su ejecución (nombre y tipo del documento, selección de opciones del menú, etc.).
 
-Por lo anterior, es indispensable ejecutarla desde una terminal real (como la terminal integrada de VS Code, CMD, PowerShell o una terminal de Linux/macOS). No se recomienda ejecutarla mediante botones de "Run" de editores en línea, sandbox de compiladores web o evaluadores automáticos que no soporten entrada estándar interactiva, ya que esto puede generar errores de ejecución o impedir el correcto funcionamiento del programa.
+Por lo anterior, es indispensable ejecutarla desde una terminal real (como la terminal integrada de VS Code, CMD, PowerShell o una terminal de Linux/macOS). No se recomienda ejecutarla mediante botones de "Run" de editores en línea, sandbox de compiladores web o 
+evaluadores automáticos que no soporten entrada estándar interactiva, ya que esto puede generar errores de ejecución o impedir el correcto funcionamiento del programa.
 
+**Instrucciones de ejecución** Para iniciar la aplicación, abre la terminal integrada de Visual Studio Code (asegurándote de estar situado en la carpeta raíz del proyecto) y ejecuta el siguiente comando: dart run bin/cola_proyect_dart.dart
