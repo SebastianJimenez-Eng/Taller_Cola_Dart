@@ -8,10 +8,10 @@ class Printer {
   Printer(this._brand);
 
   String get brand => _brand;
+  Queue<Document> get documentQueue => _documentQueue;
 
   void addDocument(Document doc) {
     _documentQueue.push(doc); 
-    print('[$_brand]: añadió "${doc.name}" a la cola');
   }
 
   void printNext() {
@@ -19,7 +19,7 @@ class Printer {
       throw Exception("No hay documentos en la cola de espera");
     }
  
-    print('[$_brand]: Imprimiendo  "${_documentQueue.peek()?.name}".(${_documentQueue.peek()?.type})...');
+    
     _documentQueue.pull();
   }
 }
