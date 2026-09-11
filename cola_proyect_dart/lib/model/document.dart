@@ -1,6 +1,6 @@
 class Document {
   String _name;
-  String _type;
+  final String _type;
 
   Document(this._name, this._type) {
     if (_name.isEmpty) {
