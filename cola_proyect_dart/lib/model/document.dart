@@ -1,6 +1,6 @@
 class Document {
   String _name;
-  String _type;
+  final String _type;
 
   Document(this._name, this._type);
 
@@ -15,5 +15,4 @@ class Document {
       _name = newName;
     }
   }
-  
 }

@@ -1,18 +1,18 @@
 import 'node.dart';
 
 class Queue<T> {
-  Node<T>? front;
-  Node<T>? rear;
+  Node<T>? _front;
+  Node<T>? _rear;
 
   void push(T value) {
     Node<T> newNode = Node(value);
 
     if (isEmpty()) {
-      front = newNode;
-      rear = newNode;
+      _front = newNode;
+      _rear = newNode;
     } else {
-      rear!.next = newNode;
-      rear = newNode;
+      _rear!.next = newNode;
+      _rear = newNode;
     }
   }
 
@@ -22,11 +22,11 @@ class Queue<T> {
       return null;
     }
 
-    T value = front!.data;
-    front = front!.next;
+    T value = _front!.data;
+    _front = _front!.next;
 
-    if (front == null) {
-      rear = null;
+    if (_front == null) {
+      _rear = null;
     }
 
     return value;
@@ -37,10 +37,10 @@ class Queue<T> {
       print("La cola está vacía");
       return null;
     }
-    return front!.data;
+    return _front!.data;
   }
 
   bool isEmpty() {
-    return front == null;
+    return _front == null;
   }
 }

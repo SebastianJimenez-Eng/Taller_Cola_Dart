@@ -1,5 +1,3 @@
-//import 'package:cola_proyect_dart/structures/queue.dart';
-
 import '../lib/structures/queue.dart';
 
 void main(List<String> arguments) {

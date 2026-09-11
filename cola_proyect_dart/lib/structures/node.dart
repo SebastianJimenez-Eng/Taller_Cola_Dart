@@ -1,6 +1,18 @@
 class Node<T> {
-  T data;
-  Node<T>? next;
+  T _data;
+  Node<T>? _next;
 
-  Node(this.data);
+  Node(this._data);
+
+  T get data => _data;
+
+  Node<T>? get next => _next;
+
+  set data(T newData) {
+    _data = newData;
+  }
+
+  set next(Node<T>? newNext) {
+    _next = newNext;
+  }
 }
