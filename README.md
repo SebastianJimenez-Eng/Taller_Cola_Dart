@@ -7,10 +7,11 @@ Implementación de colas en Dart
 * **Lenguaje de programación utilizado:** Dart.
 * **Paradigma:** Programación Orientada a Objetos (POO).
   
+--
 
 **Requisitos del sistema y software**
 
 * **Software instalado:** Dart SDK (incluye el gestor de paquetes Pub).
-* **Versión de la herramienta:** Dart SDK 3.x.x (o superior).
+* **Versión de la herramienta:** Dart SDK 3.13.3 (o superior).
 * **Configuraciones requeridas:** Agregar la ruta de instalación del Dart SDK a las variables de entorno del sistema (`PATH`) para poder ejecutar comandos desde cualquier terminal.
 * **Entorno de desarrollo utilizado:** Visual Studio Code con la extensión oficial de "Dart" instalada.
