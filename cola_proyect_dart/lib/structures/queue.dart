@@ -16,10 +16,9 @@ class Queue<T> {
     }
   }
 
-  T? pull() {
+  T pull() {
     if (isEmpty()) {
-      print("La cola está vacía");
-      return null;
+      throw Exception("La cola está vacía");
     }
 
     T value = _front!.data;
@@ -32,10 +31,9 @@ class Queue<T> {
     return value;
   }
 
-  T? peek() {
+  T peek() {
     if (isEmpty()) {
-      print("La cola está vacía");
-      return null;
+      throw Exception("La cola está vacía");
     }
     return _front!.data;
   }
