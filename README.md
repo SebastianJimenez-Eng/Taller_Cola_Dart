@@ -14,3 +14,9 @@
 * **Versión de la herramienta:** Dart SDK 3.13.3 (o superior).
 * **Configuraciones requeridas:** Agregar la ruta de instalación del Dart SDK a las variables de entorno del sistema (`PATH`) para poder ejecutar comandos desde cualquier terminal.
 * **Entorno de desarrollo utilizado:** Visual Studio Code con la extensión oficial de "Dart" instalada.
+  
+**Funcionamiento**
+
+Esta aplicación requiere entrada interactiva por teclado (stdin) para funcionar correctamente, ya que solicita datos al usuario durante su ejecución (nombre y tipo del documento, selección de opciones del menú, etc.).
+
+Por lo anterior, es indispensable ejecutarla desde una terminal real (como la terminal integrada de VS Code, CMD, PowerShell o una terminal de Linux/macOS). No se recomienda ejecutarla mediante botones de "Run" de editores en línea, sandbox de compiladores web o evaluadores automáticos que no soporten entrada estándar interactiva, ya que esto puede generar errores de ejecución o impedir el correcto funcionamiento del programa.
