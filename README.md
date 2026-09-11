@@ -1,5 +1,5 @@
 # Taller_Cola_Dart
-Implementación de colas en Dart
+**Implementación de colas en Dart**
 
 **Descripción:** Aplicación en consola que gestiona el trabajo de una fotocopiadora. Implementa una cola FIFO (First In, First Out) para procesar las solicitudes de impresión en orden de llegada.
 
@@ -7,7 +7,6 @@ Implementación de colas en Dart
 * **Lenguaje de programación utilizado:** Dart.
 * **Paradigma:** Programación Orientada a Objetos (POO).
   
---
 
 **Requisitos del sistema y software**
 
