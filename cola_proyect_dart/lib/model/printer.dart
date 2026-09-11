@@ -15,10 +15,7 @@ class Printer {
   }
 
   void printNext() {
-    if (_documentQueue.isEmpty()) { 
-      throw Exception("No hay documentos en la cola de espera");
-    }
- 
+    
     
     _documentQueue.pull();
   }
