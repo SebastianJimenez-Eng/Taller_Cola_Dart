@@ -18,7 +18,6 @@ class Queue<T> {
 
   T? pull() {
     if (isEmpty()) {
-      print("La cola está vacía");
       return null;
     }
 
@@ -34,7 +33,6 @@ class Queue<T> {
 
   T? peek() {
     if (isEmpty()) {
-      print("La cola está vacía");
       return null;
     }
     return _front!.data;

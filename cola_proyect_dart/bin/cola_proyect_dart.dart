@@ -1,4 +1,3 @@
-
 import 'dart:io';
 
 import '../lib/model/document.dart';
@@ -9,7 +8,7 @@ void main(List<String> arguments) {
   Printer printer = Printer("SAMSUNG");
   String input = '0';
 
-  while( input != "3"){
+  while (input != "3") {
     print("IMPRESORA\n\n1: Agregar documento\n2: Imprimir document\n3: Salir");
     input = stdin.readLineSync()!;
 
@@ -28,7 +27,9 @@ void main(List<String> arguments) {
 
       case "2":
         try {
-          print('${printer.brand} : Imprimiendo ${printer.documentQueue.peek()?.name}.${printer.documentQueue.peek()?.type}');
+          print(
+            '${printer.brand} : Imprimiendo ${printer.documentQueue.peek()?.name}.${printer.documentQueue.peek()?.type}',
+          );
           printer.printNext();
         } catch (e) {
           print("$e");
@@ -42,8 +43,6 @@ void main(List<String> arguments) {
 
       default:
         print("Opciones validas: 1, 2, 3.");
-    } 
-
+    }
   }
-  
 }
