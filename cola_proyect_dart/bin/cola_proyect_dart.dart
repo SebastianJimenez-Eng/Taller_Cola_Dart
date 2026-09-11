@@ -1,4 +1,6 @@
-import 'package:cola_proyect_dart/structures/Queue.dart';
+//import 'package:cola_proyect_dart/structures/queue.dart';
+
+import '../lib/structures/queue.dart';
 
 void main(List<String> arguments) {
   Queue<int> cola = Queue<int>();
