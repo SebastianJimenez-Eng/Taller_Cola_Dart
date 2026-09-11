@@ -1,4 +1,3 @@
-
 import 'dart:io';
 
 import '../lib/model/document.dart';
@@ -43,8 +42,6 @@ void main(List<String> arguments) {
 
       default:
         print("Opciones validas: 1, 2, 3.");
-    } 
-
+    }
   }
-  
 }
