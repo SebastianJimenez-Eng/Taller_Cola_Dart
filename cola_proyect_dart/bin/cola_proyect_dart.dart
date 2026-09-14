@@ -2,15 +2,15 @@ import 'dart:io';
 
 import '../lib/model/document.dart';
 import '../lib/model/printer.dart';
-import '../lib/structures/queue.dart';
 
 void main(List<String> arguments) {
   Printer printer = Printer("SAMSUNG");
   String input = '0';
-  Document document;
 
-  while( input != "3"){
-    print("\nIMPRESORA\n\n1: Agregar documento\n2: Imprimir documento\n3: Salir");
+  while (input != "3") {
+    print(
+      "\nIMPRESORA\n\n1: Agregar documento\n2: Imprimir documento\n3: Salir",
+    );
     input = stdin.readLineSync()!;
 
     switch (input) {
@@ -28,7 +28,9 @@ void main(List<String> arguments) {
 
       case "2":
         try {
-          print('${printer.brand} : Imprimiendo ${printer.documentQueue.peek().name}.${printer.documentQueue.peek().type}');
+          print(
+            '${printer.brand} : Imprimiendo ${printer.documentQueue.peek().name}.${printer.documentQueue.peek().type}',
+          );
           printer.printNext();
         } catch (e) {
           print("$e");

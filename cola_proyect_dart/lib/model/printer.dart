@@ -11,12 +11,10 @@ class Printer {
   Queue<Document> get documentQueue => _documentQueue;
 
   void addDocument(Document doc) {
-    _documentQueue.push(doc); 
+    _documentQueue.push(doc);
   }
 
   void printNext() {
-    
-    
     _documentQueue.pull();
   }
 }
